@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `atendimentos` (
-  `ID` int(10) NOT NULL,
+  `id` int(10) NOT NULL,
   `Nome` varchar(10) NOT NULL,
   `Telefone` varchar(10) NOT NULL,
   `Atividade` varchar(8) NOT NULL,
@@ -45,7 +45,7 @@ CREATE TABLE `atendimentos` (
 -- Índices para tabela `atendimentos`
 --
 ALTER TABLE `atendimentos`
-  ADD PRIMARY KEY (`ID`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT de tabelas despejadas
@@ -55,7 +55,7 @@ ALTER TABLE `atendimentos`
 -- AUTO_INCREMENT de tabela `atendimentos`
 --
 ALTER TABLE `atendimentos`
-  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
